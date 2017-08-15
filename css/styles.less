@@ -1,0 +1,99 @@
+/* LESS Variables */
+/*  */
+@img-size-wsml: 150px;
+@img-size-hsml: 150px;
+@font-base-size: 14px;
+/* colors */
+@primary-color:#E70909;
+@accent-color:#422C2C;
+@foreground-color:#F8F3F3;
+@background-color:#CBC6C6;
+@primary-color:#422C2C;
+@font-color:black;
+@text-shadow-color:#FF3619;
+/*LESS Variables for text  */
+@text-shadow: 2px 2px 2px;
+@font-family: hea
+/*end of variable declaration */
+
+/*This defines Semantic Elements as blocks for older browsers  */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+body{
+  background-color: @background-color;
+}
+/*header*/
+div .headerlogo{
+  position: top: 5px; left: 5px;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+
+}
+
+.headerlogo img {
+  height: @img-size-hsml;
+  width: @img-size-wsml;
+}
+div #headername span {
+    font-size: @font-base-size + 65px;
+    font-family: headerfont;
+    text-shadow: @text-shadow-color @text-shadow;
+    color: @primary-color;
+    padding: 15px;
+    margin: 0 2.5em;
+    font-weight: bold;
+}
+
+/* Navigation bar styles start */
+
+nav {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+nav ul {
+    list-style: none;
+    padding: 0px;
+}
+nav ul li {
+    display: block;
+}
+nav ul li > a {
+    text-decoration:none;
+}
+nav ul li > a:hover {
+    text-decoration:underline;
+}
+.navbar-background {
+    background-color: #142952;
+}
+.navlink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    float: left;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+.navlink.active {
+    color: lightgreen;
+    background-color: white;
+}
+/* Navigation bar styles end */
+
+/* Navigation bar styles end */
+/* content */
+.twocol {
+  column-count: 2;
+}
+
+.threecol {
+  column-count: 3; column-gap: 10px;
+}
